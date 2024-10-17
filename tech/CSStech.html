@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-image: linear-gradient(to right bottom,
+                    #91defe,
+                    #99c0f9,
+                    #bdb6ec,
+                    #d7b3e3,
+                    #efb3d5,
+                    #f9bccc);
+            display: flex;
+            background-size: 400% 400%;
+            justify-content: center;
+            align-items: center;
+            animation: background 5s infinite
+        }
+        .container {
+            /* 这里是注释 */
+            height: 50vh;
+            display: flex;
+            max-height: 600px;
+            min-height: 400px;
+            box-shadow: 1px 2px 10px black;
+        }
+        .left {
+            width: 200px;
+            height: 100%;
+            background-image: url('./你的名字.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 5px 0px 0px 5px;
+        }
+        .right {
+            width: 400px;
+            display: flex;
+            background-color: aliceblue;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .right h4{
+            font-size: 24px;
+            color: rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+        .right span {
+            color: #91defe;
+        }
+        .right p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 250px;
+        }
+        .email,
+        .password {
+            height: 56px;
+            width: 100%;
+            display: flex;
+        }
+        .right input {
+            width: 100%;
+            background-color: rgba(0,0,0,0);
+            border: none;
+            border-bottom: 2px solid #91defe;
+            margin-bottom: 10px;
+            outline: none;
+        }
+        .icon {
+            margin: auto 0;
+            margin-right: 10px;
+        }
+        .right button {
+            padding: 20px 30px;
+            border-radius: 25px;
+            border: none;
+            background-color: #bdb6ec;
+            width: 150px;
+            margin-left: auto;
+            
+        }
+        .right a {
+            font-size: 16px;
+            color: #91defe;
+            margin-left: auto;
+            margin-top: 10px;
+        }
+        @keyframes background {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 0%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <h4>Welcome to <span>Student Online</span></h4>
+            <p>Here, you can communicate, share, learn, and grow together with a group of like-minded friends</p>
+            <div class="email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="icon" viewBox="0 0 16 16">
+                    <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="password">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="icon" viewBox="0 0 16 16">
+                    <path
+                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                </svg>
+                <input type="password" placeholder="password">
+            </div>
+            <button>Login in</button>
+            <a href="#">register</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
