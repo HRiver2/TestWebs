@@ -53,17 +53,37 @@
         </style>
         
     </head>
-    <div class="header">
-        <div class="navi">
-            <div class="box">Alice</div>
-            <div class="box">Tracya</div>
-            <div class="box">Synya</div>
-            <div class="box">Torob</div>
-            <div class="box">Jocob</div>
+    <body>
+        <div class="header">
+            <div class="navi">
+                <div class="box">Alice</div>
+                <div class="box">Tracya</div>
+                <div class="box">Synya</div>
+                <div class="box">Torob</div>
+                <div class="box">Jocob</div>
+            </div>
         </div>
-    </div>
-    <div class="headline">
-        <h1>and</h1>
-    </div>
-    
+        <div class="headline">
+            <h1>and</h1>
+        </div>
+        <div class="para">
+            <div id="intro">
+
+            </div>
+        </div>
+    </body>
+    <script>
+        function getTime() {
+            const now = new Date();
+            const last = new Date("2024-10-28 18:00:00");
+            const a = (last - now) / 1000;
+            const day = Math.floor((last - now) / 1000 / 60 / 60 / 24);
+            const h = Math.floor(((last - now) / 1000 / 60 / 60) % 24);
+            const min = Math.floor(((last - now) / 1000 / 60) % 60);
+            const s = Math.floor(((last - now) / 1000) % 60);
+            console.log(day, h, min, s);
+        }
+        
+        setInterval("getTime()", 1000);
+    </script>
 </html>

@@ -63,20 +63,21 @@ input {
     width: 15vw;
     border-color: #fff0;
     transition: 0.4s;
+    background-color: #ffffffb2;
 }
 
 input:hover:enabled, select:hover:enabled {
-    background-color: #cffaaab1;
+    background-color: #ffffff;
     box-shadow: 0 6px 15px rgba(36, 37, 38, .15), inset 5px 5px 15px transparent;
 }
 
 button:hover:enabled {
-    background-color: #aab3fab1;
+    background-color: #cffaaab1;
     box-shadow: 0 6px 15px rgba(36, 37, 38, .15), inset 5px 5px 15px transparent;
 }
 
 input:disabled, select:disabled, button:disabled {
-    background-color: #cffaaab1;
+    background-color: #ffffff;
     box-shadow: 0;
 }
 
@@ -89,10 +90,11 @@ select {
     border-color: #fff0;
     text-align: center;
     transition: 0.2s;
+    background-color: #ffffffb2;
 }
 
 select option:checked {
-    background-color: rgb(227, 231, 201);
+    background-color: rgb(201, 226, 231);
     color: #000;
 }
 
@@ -154,17 +156,15 @@ select option:hover {
 
     input {
         width: 50vw;
-        /* height: max-content; */
     }
 
     select {
         width: 50vw;
-        /* height: max-content; */
     }
 
     button {
         width: 50vw;
-        /* height: max-content; */
+        margin-top: 1vh;
     }
 
     .carousel {
@@ -175,7 +175,7 @@ select option:hover {
 
     .form label {
         display: flex;
-        margin-top: 1px;
-        margin-bottom: 1px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
 }

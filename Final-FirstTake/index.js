@@ -7,4 +7,8 @@ function showNextImage() {
     imagesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-setInterval(showNextImage, 3000); // 每3秒切换一次图片
+setInterval(showNextImage, 3000);
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', function(){alert('我想要说的，前人都说过了')});
